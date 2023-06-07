@@ -5,9 +5,9 @@ using UnityEngine;
 public class PillarSpawnerScript : MonoBehaviour
 {
     public GameObject zongliPillar;
-    public int spawnRate = 3;
+    public float spawnRate = 2.5f;
     private float timer = 0f;
-    public float heightOffset = 3f;
+    public float heightOffset = 5f;
 
     // Start is called before the first frame update
     void Start()

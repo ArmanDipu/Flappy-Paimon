@@ -19,6 +19,7 @@ public class ZongliPillarScript : MonoBehaviour
 
         if(transform.position.x < deadZone){
             Destroy(gameObject);
+            Debug.Log("Pillar Deleted.");
         }
     }
 }

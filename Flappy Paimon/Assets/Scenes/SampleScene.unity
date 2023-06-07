@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zongliPillar: {fileID: 4587516689164392798, guid: fcdb19726eb8103449536c791644d25f, type: 3}
-  spawnRate: 3
+  spawnRate: 2.5
   heightOffset: 5
 --- !u!4 &119142988
 Transform:
