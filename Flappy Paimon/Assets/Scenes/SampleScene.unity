@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zongliPillar: {fileID: 4587516689164392798, guid: fcdb19726eb8103449536c791644d25f, type: 3}
   spawnRate: 2.5
+  spawnOffset: 10
   heightOffset: 5
 --- !u!4 &119142988
 Transform:
@@ -206,7 +207,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.23629402, g: 0.7075472, b: 0.66962934, a: 0}
+  m_BackGroundColor: {r: 0.8009604, g: 1, b: 0.6264151, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -308,7 +309,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &2064403160
 SpriteRenderer:
   m_ObjectHideFlags: 0

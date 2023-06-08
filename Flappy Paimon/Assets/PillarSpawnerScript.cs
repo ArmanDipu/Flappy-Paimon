@@ -6,6 +6,7 @@ public class PillarSpawnerScript : MonoBehaviour
 {
     public GameObject zongliPillar;
     public float spawnRate = 2.5f;
+    public float spawnOffset = 5f;
     private float timer = 0f;
     public float heightOffset = 5f;
 
@@ -31,7 +32,7 @@ public class PillarSpawnerScript : MonoBehaviour
         float lowestPoint = transform.position.y - heightOffset;
         float highestPoint = transform.position.y + heightOffset;
         Instantiate(zongliPillar, 
-            new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint)),  
+            new Vector3((transform.position.x + spawnOffset ), Random.Range(lowestPoint, highestPoint)),  
             transform.rotation);
     }
 }
