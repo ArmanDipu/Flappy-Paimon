@@ -9,9 +9,11 @@ public class LogicScript : MonoBehaviour
     public int playerScore;
     public Text scoreText;
     public GameObject gameOverScreen;
+    public AudioSource dingSFX;
 
     public void addScore(int score){
         playerScore+= score;
+        dingSFX.Play();
         scoreText.text = playerScore.ToString();
     }
 
