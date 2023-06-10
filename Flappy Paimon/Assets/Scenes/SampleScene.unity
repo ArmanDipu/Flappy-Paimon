@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 2064403162}
   m_Layer: 3
   m_Name: Paimon
-  m_TagString: Untagged
+  m_TagString: paimon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1054,7 +1054,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.25}
   serializedVersion: 2
-  m_Radius: 1.75
+  m_Radius: 1.5
 --- !u!1 &2108487796
 GameObject:
   m_ObjectHideFlags: 0

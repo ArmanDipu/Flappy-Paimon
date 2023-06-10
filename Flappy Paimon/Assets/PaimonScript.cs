@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,7 @@ public class PaimonScript : MonoBehaviour
     public Rigidbody2D paimonRigidBody2D;
     public float flapStrength = 7.5f;
     public LogicScript logicScript;
-    private bool isPaimonAlive = true;
+    public bool isPaimonAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,12 @@ public class PaimonScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && isPaimonAlive){
             paimonRigidBody2D.velocity = Vector2.up * flapStrength;
+        }
+
+        if(Math.Abs(transform.position.y) > 10 && isPaimonAlive){
+            Debug.Log("Player Went Out of Playable Area");
+            logicScript.gameOver();
+            isPaimonAlive = false;
         }
     }
 
