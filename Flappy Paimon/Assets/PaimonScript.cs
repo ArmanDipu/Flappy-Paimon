@@ -9,6 +9,7 @@ public class PaimonScript : MonoBehaviour
     public float flapStrength = 7.5f;
     public LogicScript logicScript;
     public bool isPaimonAlive = true;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class PaimonScript : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision){
+        animator.SetBool("IsPaimonDead", true);
         Debug.Log("Collision Happened");
         logicScript.gameOver();
         isPaimonAlive = false;
